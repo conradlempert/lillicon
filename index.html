@@ -132,6 +132,9 @@
     </script>
 
     <script>
+      if (!paper.Item.prototype.setRampPoint) {
+        paper.Item.prototype.setRampPoint = function () {};
+      }
       var is_loaded = false;
       var svgref;
       var Vec2 = primitives.Vec2;
